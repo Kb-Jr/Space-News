@@ -19,4 +19,4 @@ A web app which displays 10 space related news built with React JS.
 
 # Links
 ## API Endpoint
-- (SpaceNews API endpoint)[https://api.spaceflightnewsapi.net/v3/articles/]
+- [SpaceNews API endpoint](https://api.spaceflightnewsapi.net/v3/articles/)
