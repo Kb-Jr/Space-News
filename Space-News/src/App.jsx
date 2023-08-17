@@ -10,12 +10,11 @@ useEffect(() => {
   .then((response)=> response.json())
   .then((data) =>{
     setArticles(data);
-    console.log(data);
   });
-}
-
-  
+}  
 , []);
+
+
   return (
     <div className="App">
       <div className="title">
