@@ -17,22 +17,27 @@ useEffect(() => {
   
 , []);
   return (
-    <div className='wrapper'>
+    <div className="App">
+      <div className="title">
+        <h1>WELCOME TO SPACE NEWS!</h1>
+      </div>
+    <div className='newsContainer'>
           {articles.map((article, key) =>{
-            return <div className='articleContainer' key={key} onClick={() => window.open(article.url, '_blank')}>
+            return <div className='article' title={article.url} key={key} onClick={() => window.open(article.url, '_blank')}>
                           <div className="image">
-                            {/* <img src={article.imageUrl} alt="" /> */}
+                            <img src={article.imageUrl} alt="" />
                           </div>
                           <div className="content">
-                            {/* <h2>{article.title}</h2>
+                            <h2>{article.title}</h2>
                             <p>{article.summary}</p>
-                            <p>Published on:{new Date(article.publishedAt).toDateString()}</p> */}
+                            <p><strong>Published on: {new Date(article.publishedAt).toDateString()}</strong></p>
                           </div>
                           
                       </div>
                    
           })}
     </ div>
+    </div>
   )
 }
 
