@@ -1,5 +1,5 @@
 # Space-News
-A web app which displays 10 space related news built with React JS.
+A web page which displays 10 space related news built with React JS.
 
 
 # Methodology
